@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <style>
+        *{
+            font-family: 'Inter';
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            }
+        #oi{
+                margin-left: 50px;
+                margin-top: 50px;
+                
+            }
+        
+            #titulo_superior{
+                margin-left:150px;
+                margin-top: 75px;
+            }
+        
+        #texto_inferior{
+                margin-left: 150px;
+                margin-top: 35px;
+                padding-bottom:100px;
+                margin-bottom: 0;
+    
+            }
+        #menusuperior{
+            background-image: url(imagens/background.svg);
+            background-size: cover;
+            color: aliceblue;
+            font-family: 'Inter', sans-serif;
+        }
+        #menuformacional{
+            background-color: #EAECE5;
+            font-family: 'Inter';
+            display: grid;
+            grid-auto-flow: column;
+            
+        }
+        .icone{
+            margin-left: 50px;
+            padding: 25px;
+            display: flex;
+            
+        }
+        .textoinformativo{
+            display: flex;
+            align-items: center;
+        }
+        #titulovideo{
+            color: #247BA0;
+            margin-top: 50px;
+            
+        }
+        #secaovideo{
+            display: grid;
+            grid-auto-flow: column;
+            columns: auto;
+        }
+
+        #video{
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 25px;
+            margin-bottom: 50px;
+        }
+        
+        #carrosel{
+            background-color: #247BA0;
+            
+            padding: 50px;
+        }
+
+        #titulo_carrosel{
+            color: #EAECE5;
+            text-align: center;
+            font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 150%;
+                align-items: center;
+                padding: auto;
+        }
+    
+        #div-cards{
+            margin-left: 50px;
+            display: grid;
+            grid-auto-flow: column;
+            display: grid;
+            grid-gap: 5px;
+            
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            align-items: center;
+        }
+
+        #seta-esquerda{
+            display: none;
+        }
+        #Samanta{
+            display: none;
+        }
+        .seta{
+            margin-top:  50%;
+            cursor: pointer;
+        }
+        .seta:hover{
+            transition: 0,4s;
+            transform:translateY(-7px)
+            
+        }
+        #titulo_input{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            color: #383838;
+        }
+        #formulario{
+            text-align: center;
+        }
+        input{
+            width: 300px;
+            height:30px ;
+            background-color: #EAECE5;
+            margin: 15px;
+            border:0px;
+            border-radius: 5%;
+            padding-left: 10px;
+        }
+        button{
+            width:250px ;
+            height:33px ;
+            background-color: #247BA0;
+            color:#FFFFFF;
+            text-align: center;
+            border-radius: 5%;
+            border:0px;
+            font-weight: bolder;
+        
+        }
+        button:hover{
+            background-color: #66a3bd;
+
+        }
+    </style>
+
+<body>
+    <div id="menusuperior">
+        <a href="https://www.escoladnc.com.br/">
+            <img  src="imagens/dnc.svg" id="oi" alt="ERROR"> </a>
+        <h1 id="titulo_superior">Dê os primeiros passos da<br>
+            sua carreira em Tecnologia</h1>
+        <p id='texto_inferior'>Inscreva-se no curso gratuito de Introdução à<br>
+            Tecnologia da DNC School e aprenda os principais<br>
+            fundamentos para construir experiências efetivas.</p>
+    </div>
+    <div id="menuformacional">
+        <p class="textoinformativo"><img src="imagens/icone1.svg" class="icone">Certificado de conclusão</p>
+        <p class="textoinformativo"><img src="imagens/icone2.svg" class="icone">4 horas de conteúdo</p>
+
+        <p class="textoinformativo"><img src="imagens/icone2.svg" class="icone">Aulas online gravada</p>
+    </div>
+    <div id="secaovideo">
+        <iframe id="video"  width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div>
+            <h1 id="titulovideo">
+                Aprenda com especialistas e <br>
+                comece seu primeiro projeto
+            </h1><br>
+            <p id="textovideo">Conheça o processo de desenvolvimento e entenda como utilizar<br>
+               os principais métodos e ferramentas da área para resolver<br>
+               problemas complexos.<br><br>
+    
+                Conquiste seu certificado e desenvolva um projeto prático para<br>
+                aplicar seus conhecimentos.</p>
+        </div>
+        
+    </div>
+    <div id="carrosel">
+        <h1 id="titulo_carrosel">Mais de 500 alunos já iniciaram seus estudos</h1>
+        <div id="div-cards">
+            <img id="seta-esquerda"  onclick="RolarParaEsquerda() "class="seta" src="./imagens/setaesquerda.svg">
+            <img id="Leonardo" class="card" src="Cards/leonardo.svg">
+            <img id="Bruna" class="card" src="Cards/Bruna.svg">
+            <img id="Samanta" class="card" src="Cards/samanta.svg">
+            <img id= "seta-direita"  onclick="RolarParaDireita() "class="seta" src="./imagens/setadireita.svg">
+        </div>
+            
+    </div>
+    <div id="formulario">
+        <h1 id="titulo_input">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+        <form action="https://api.sheetmonkey.io/form/9e7SqrdvVusJ5jS6RjBG9Z" method="post">
+                <input type="text" placeholder="Nome" name="Name" required><br>
+                <input type="email" placeholder="Email" name="Email" required><br>
+                <input type="number" placeholder="Telefone" name="Phone"><br>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <button type="submit">Acesse a ementa grátis</button>
+        </form>
+    </div>
+        <script src="index.js"></script>
+
+    </body>
